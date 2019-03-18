@@ -3,11 +3,11 @@ app=Flask(__name__,template_folder='tamplate')
 @app.route('/')
 def home():
     return render_template('index.html')
-@app.route('/singup.html')    
+@app.route('/singup/')    
 def sing():
-    return render_template('singup.html') 
-@app.route('/login.html')    
+    return render_template('singup2.html') 
+@app.route('/login/')    
 def log():
-    return render_template('login.html')     
+    return render_template('login2.html')     
 if __name__ == '__main__':
-    app.run('localhost',8080,debug=True)    
+    app.run('localhost',5000,debug=True)  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    
+    
+
+        <title>HOME</title>
+        <link rel='stylesheet' href='/static/css/app2.css'
+        type='text/css'>
+        {% block head %}
+    
+        {% endblock %}
+    </head>
+    <body>
+        <div id="header">
+            <h1>udesh pvt. ltd. jaipur</h1>
+            {% block header %}
+            {% endblock %}
+            <table>
+                <tr>
+                <td>
+                    <a href='/'>HOME</a>
+                </td>
+                <td>
+                    <a href='/login/'>login</a>
+                </td>
+                <td>
+                    <a href='/singup/'>singup</a>
+                </td>
+                <td>
+                    <a href='about'>about</a>
+                </td>
+                {% block table %}
+                {% endblock %}
+            </tr>
+        </table>
+        </div>
+
+        <div id='side1'>
+                
+            {% block side1 %}
+            {% endblock %}
+        </div>
+        <div id='middle'>
+                <img src='/static/image/imge.pg' alt='jai data re'>
+              
+                {% block middle %}
+                {% endblock %}
+
+        </div>
+        <div id="side2">
+                
+                {% block side2 %}
+                {% endblock %}
+        </div>   
+        <div id='footer'>
+                <h1> All Rights are Reserved at &copy;udesh solution</h1>
+                {% block footer %}
+                {% endblock %}
+            </div> 
+
+
+        
+    </body>
+</html>
